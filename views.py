@@ -3,6 +3,7 @@ from django.utils import timezone
 from .models import Post
 from .forms import PostForm
 from django.shortcuts import redirect
+from django.contrib.auth.decorators import login_required
 
 
 def post_list(request):
